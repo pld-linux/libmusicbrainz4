@@ -6,7 +6,7 @@ Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	ftp://ftp.musicbrainz.org/pub/musicbrainz/libmusicbrainz-%{version}.tar.gz
-# Source0-md5:	f4824d0a75bdeeef1e45cc88de7bb58a
+# Source0-md5:	21c33f5dd20b8bb945b800e2a964f27e
 URL:		http://www.musicbrainz.org/
 BuildRequires:	cmake >= 2.6
 BuildRequires:	cppunit-devel
