@@ -1,12 +1,12 @@
 Summary:	A software library for accesing MusicBrainz servers
 Summary(pl.UTF-8):	Biblioteka umożliwiająca korzystanie z serwerów MusicBrainz
 Name:		libmusicbrainz4
-Version:	4.0.0
+Version:	4.0.3
 Release:	1
 License:	LGPL v2
 Group:		Libraries
-Source0:	ftp://ftp.musicbrainz.org/pub/musicbrainz/libmusicbrainz-%{version}.tar.gz
-# Source0-md5:	21c33f5dd20b8bb945b800e2a964f27e
+Source0:	https://github.com/downloads/metabrainz/libmusicbrainz/libmusicbrainz-%{version}.tar.gz
+# Source0-md5:	19b43a543d338751e9dc524f6236892b
 URL:		http://www.musicbrainz.org/
 BuildRequires:	cmake >= 2.6
 BuildRequires:	neon-devel >= 0.25
@@ -71,7 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS.txt NEWS.txt README.txt
+%doc AUTHORS.txt NEWS.txt
 %attr(755,root,root) %{_libdir}/libmusicbrainz4.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libmusicbrainz4.so.3
 
