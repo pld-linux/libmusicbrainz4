@@ -5,8 +5,8 @@ Version:	4.0.3
 Release:	2
 License:	LGPL v2.1
 Group:		Libraries
-#Source0Download: https://github.com/metabrainz/libmusicbrainz/downloads
-Source0:	https://github.com/downloads/metabrainz/libmusicbrainz/libmusicbrainz-%{version}.tar.gz
+#Source0Download: https://github.com/metabrainz/libmusicbrainz/tags
+Source0:	https://github.com/metabrainz/libmusicbrainz/archive/release-%{version}/libmusicbrainz-release-%{version}.tar.gz
 # Source0-md5:	19b43a543d338751e9dc524f6236892b
 URL:		http://www.musicbrainz.org/
 BuildRequires:	cmake >= 2.6
@@ -43,7 +43,7 @@ Pliki nagłówkowe potrzebne programistom do rozwijania aplikacji
 używających biblioteki libmusicbrainz.
 
 %prep
-%setup -q -n libmusicbrainz-%{version}
+%setup -q -n libmusicbrainz-release-%{version}
 
 %build
 %cmake . \
