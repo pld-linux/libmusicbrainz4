@@ -2,7 +2,7 @@ Summary:	A software library for accesing MusicBrainz servers
 Summary(pl.UTF-8):	Biblioteka umożliwiająca korzystanie z serwerów MusicBrainz
 Name:		libmusicbrainz4
 Version:	4.0.3
-Release:	1
+Release:	2
 License:	LGPL v2.1
 Group:		Libraries
 #Source0Download: https://github.com/metabrainz/libmusicbrainz/downloads
