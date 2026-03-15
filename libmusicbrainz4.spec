@@ -61,9 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-# for rpm autodeps
-chmod 755 $RPM_BUILD_ROOT%{_libdir}/libmusicbrainz4.so*
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -73,11 +70,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS.txt NEWS.txt
-%attr(755,root,root) %{_libdir}/libmusicbrainz4.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libmusicbrainz4.so.3
+%{_libdir}/libmusicbrainz4.so.*.*.*
+%ghost %{_libdir}/libmusicbrainz4.so.3
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libmusicbrainz4.so
+%{_libdir}/libmusicbrainz4.so
 %{_includedir}/musicbrainz4
 %{_pkgconfigdir}/libmusicbrainz4.pc
