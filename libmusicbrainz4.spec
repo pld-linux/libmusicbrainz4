@@ -7,8 +7,8 @@ License:	LGPL v2.1
 Group:		Libraries
 #Source0Download: https://github.com/metabrainz/libmusicbrainz/tags
 Source0:	https://github.com/metabrainz/libmusicbrainz/archive/release-%{version}/libmusicbrainz-release-%{version}.tar.gz
-# Source0-md5:	19b43a543d338751e9dc524f6236892b
-URL:		http://www.musicbrainz.org/
+# Source0-md5:	a31b614e855b2fecdea9c0a8042f76ae
+URL:		https://musicbrainz.org/
 BuildRequires:	cmake >= 2.6
 BuildRequires:	neon-devel >= 0.25
 BuildRequires:	libstdc++-devel
